@@ -1,0 +1,30 @@
+{
+  "name": "zone-pomodoro-electron",
+  "version": "1.0.0",
+  "description": "Desktop build of The Zone Pomodoro",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/COANelmejor/zone-pomodoro-electron.git"
+  },
+  "keywords": [
+    "Desktop",
+    "Windows",
+    "Linux",
+    "Mac",
+    "Zone",
+    "Pomodoro"
+  ],
+  "author": "COANelmejor <coanelmejor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/COANelmejor/zone-pomodoro-electron/issues"
+  },
+  "homepage": "https://github.com/COANelmejor/zone-pomodoro-electron#readme",
+  "devDependencies": {
+    "electron": "^24.1.0"
+  }
+}
