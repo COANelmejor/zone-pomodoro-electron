@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/COANelmejor/zone-pomodoro-electron#readme",
   "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
     "electron": "^24.1.0"
   }
 }
