@@ -5,11 +5,29 @@ const path = require("path");
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+
+    // Window size
     width: 740,
     height: 540,
+
+    // Window position
+    // x: 0,
+    // y: 0,
+
+    // Window title
+    title: "The Zone Pomodoro",
+
+    // Window icon
+    icon: path.join(__dirname, "./build/icon192.png"),
+    
+
+    // WebPreferences
     webPreferences: {
+      nodeIntegration: true,
+      enableRemoteModule: true,
       preload: path.join(__dirname, "preload.js"),
     },
+    zoomFactor: 1.0,
   });
 
   // and load the index.html of the app.
@@ -17,6 +35,9 @@ const createWindow = () => {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+
+  // Window need to be always on top, even when the user is using another app
+  mainWindow.setAlwaysOnTop(true, "floating", 1);
 };
 
 // This method will be called when Electron has finished
@@ -40,4 +61,4 @@ app.on("window-all-closed", () => {
 });
 
 // In this file you can include the rest of your app's specific main process
-// code. Tu también puedes ponerlos en archivos separados y requerirlos aquí.
+// code. You can also put them in separate files and require them here.
